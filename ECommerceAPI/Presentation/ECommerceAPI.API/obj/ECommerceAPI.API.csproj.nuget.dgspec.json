@@ -1,0 +1,288 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj": {}
+  },
+  "projects": {
+    "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj",
+        "projectName": "ECommerceAPI.Application",
+        "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj",
+        "packagesPath": "C:\\Users\\SATTAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SATTAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj": {
+                "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj",
+        "projectName": "ECommerceAPI.Domain",
+        "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\SATTAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SATTAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
+        "projectName": "ECommerceAPI.Persistence",
+        "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
+        "packagesPath": "C:\\Users\\SATTAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SATTAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
+                "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj",
+        "projectName": "ECommerceAPI.API",
+        "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj",
+        "packagesPath": "C:\\Users\\SATTAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SATTAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
+                "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
+              },
+              "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj": {
+                "projectPath": "D:\\Zahra Amrahova Programming Lesson\\22.03.2022\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
