@@ -22,6 +22,7 @@ namespace ECommerceAPI.Persistence.Repositories
 
         public async Task<bool> AddAsync(T model)
         {
+
             EntityEntry<T> entityEntry = await Table.AddAsync(model);
             return entityEntry.State == EntityState.Added;
         }
@@ -56,5 +57,7 @@ namespace ECommerceAPI.Persistence.Repositories
             EntityEntry entityEntry = Table.Update(model);
             return entityEntry.State ==EntityState.Modified;
         }
+
+       
     }
 }
