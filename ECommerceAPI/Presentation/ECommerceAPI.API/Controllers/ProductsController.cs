@@ -1,4 +1,5 @@
 ﻿using ECommerceAPI.Application.Repositories.ProductRep;
+using ECommerceAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -21,17 +22,61 @@ namespace ECommerceAPI.API.Controllers
             _productWriteRepository = productWriteRepository;
         }
         [HttpGet]
-        public async void Get ()
+        public IEnumerable<Product> GetAll ()
         {
-           await _productWriteRepository.AddRangeAsync(new()
-            {
-               new() { Id=Guid.NewGuid(), Name= "Product1", CreatedDate=DateTime.Now, Price=100, Stock=10},
-                new() { Id = Guid.NewGuid(), Name = "Product2", CreatedDate = DateTime.Now, Price = 1010, Stock = 40 },
-                 new() { Id = Guid.NewGuid(), Name = "Product3", CreatedDate = DateTime.Now, Price = 10, Stock = 20 },
-                  new() { Id = Guid.NewGuid(), Name = "Product4", CreatedDate = DateTime.Now, Price = 130, Stock = 30 }
-           });
-            await _productWriteRepository.SaveAsync();
+            List<Product> products = _productReadRepository.GetAll().ToList();
+
+            return products;
+        }
+        [HttpGet("{id}")]
+        public async Task <IActionResult>GetById (string id)
+        {
+            Product product = await _productReadRepository.GetByIdAsync(id);
+
+            return Ok(product);
         }
 
+        [HttpPost]
+
+        public async Task <IActionResult>Create (Product product)
+        {
+            bool result =await _productWriteRepository.AddAsync(product);
+
+            await _productWriteRepository.SaveAsync();
+            return Ok(result);
+        }
+        
+        [HttpPut]
+        public async Task<bool> Update (Product product)
+        {
+            bool result = _productWriteRepository.Update(product);
+           await _productWriteRepository.SaveAsync();
+            return result;
+        }
+
+        [HttpDelete]
+        public async Task<bool> Remove(Product product)
+        {
+            bool result = _productWriteRepository.Remove(product);
+            await _productWriteRepository.SaveAsync();
+            return result;
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<bool> RemoveById(string id)
+        {
+            bool result = await _productWriteRepository.RemoveAsync(id);
+            await _productWriteRepository.SaveAsync();
+            return result;
+        }
+
+        //[HttpPost]
+        //public async Task<IActionResult> CreateRange(List<Product> datas)
+        //{
+        //    bool result = await _productWriteRepository.AddRangeAsync(datas);
+
+
+        //    return Ok(result);
+        //}
     }
 }
