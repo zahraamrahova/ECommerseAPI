@@ -21,6 +21,10 @@ namespace ECommerceAPI.Persistence.Context
 
         public DbSet<User> Users { get; set; }
         public DbSet<Token> Tokens { get; set; }
+
+        //public DbSet<Role> Roles { get; set; }
+
+       // public DbSet<UserRole> UserRoles { get; set; }
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var datas = ChangeTracker.Entries<BaseEntity>();

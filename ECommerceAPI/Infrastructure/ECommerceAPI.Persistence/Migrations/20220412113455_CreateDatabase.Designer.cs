@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerceAPI.Persistence.Migrations
 {
     [DbContext(typeof(ECommerceAPIDbContext))]
-    [Migration("20220324123606_Mg_1")]
-    partial class Mg_1
+    [Migration("20220412113455_CreateDatabase")]
+    partial class CreateDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -57,6 +57,9 @@ namespace ECommerceAPI.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")

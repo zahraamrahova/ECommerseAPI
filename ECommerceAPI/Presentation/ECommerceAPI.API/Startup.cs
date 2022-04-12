@@ -27,6 +27,7 @@ using ECommerceAPI.Persistence.Repositories;
 using ECommerceAPI.Application.Repositories.UserRep;
 using ECommerceAPI.Persistence.Repositories.UserRep;
 
+
 namespace ECommerceAPI.API
 {
     public class Startup
@@ -70,7 +71,7 @@ namespace ECommerceAPI.API
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
             services.AddScoped<IUserReadRepository, UserReadRepository>();
-            services.AddScoped<IUserWriteRepository, UserWriteRepository>();
+            services.AddScoped<IUserWriteRepository, UserWriteRepository>();         
             services.AddDbContext<ECommerceAPIDbContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddSwaggerGen(c =>

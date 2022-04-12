@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ECommerceAPI.Persistence.Migrations
 {
-    public partial class Mg_1 : Migration
+    public partial class CreateDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -59,6 +59,7 @@ namespace ECommerceAPI.Persistence.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Role = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },

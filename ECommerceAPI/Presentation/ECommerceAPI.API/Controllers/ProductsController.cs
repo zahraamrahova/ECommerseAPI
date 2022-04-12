@@ -1,5 +1,6 @@
 ﻿using ECommerceAPI.Application.Repositories.ProductRep;
 using ECommerceAPI.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
@@ -23,6 +25,7 @@ namespace ECommerceAPI.API.Controllers
             _productWriteRepository = productWriteRepository;
         }
         [HttpGet]
+        [Authorize(Roles ="Admin")]
         public IEnumerable<Product> GetAll ()
         {
             List<Product> products = _productReadRepository.GetAll().ToList();
@@ -30,6 +33,7 @@ namespace ECommerceAPI.API.Controllers
             return products;
         }
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task <IActionResult>GetById (string id)
         {
             Product product = await _productReadRepository.GetByIdAsync(id);
@@ -68,6 +72,7 @@ namespace ECommerceAPI.API.Controllers
             return products;
         }
         [HttpPost]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task <IActionResult>Create (Product product)
         {
             bool result =await _productWriteRepository.AddAsync(product);

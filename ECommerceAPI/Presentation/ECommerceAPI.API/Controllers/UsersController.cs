@@ -11,7 +11,8 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.API.Controllers
 {
-    [Route("api/[controller]")]
+	[Authorize]
+	[Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -29,15 +30,20 @@ namespace ECommerceAPI.API.Controllers
 		[HttpGet]
 		public IEnumerable<User> GetAll()
 		{
-			List<User> orders = _userReadRepository.GetAll().ToList();
+			List<User> users = _userReadRepository.GetAll().ToList();
 
-			return orders;
+			return users;
 		}
-
+		[AllowAnonymous]
 		[HttpPost]
-		public async Task<IActionResult> Create(User order)
+		public async Task<IActionResult> Create(User user)
 		{
-			bool result = await _userWriteRepository.AddAsync(order);
+			if (_userReadRepository.GetAll().Any(x => x.Name == user.Name && x.Password == user.Password))
+			{
+				return Ok("this user already registered");
+			}
+
+			bool result = await _userWriteRepository.AddAsync(user);
 			await _userWriteRepository.SaveAsync();
 
 			return Ok(result);
